@@ -28,10 +28,12 @@ def self.genres
 end
 #
 def self.genre_count
-
 result = @@genres.each_with_object(Hash.new(0)) { |word,counts| counts[word] += 1 }
 #binding.pry
 end
 
+def artist_count
+result = @@artists.each_with_object(Hash.new(0)) { |word,counts| counts[word] += 1 }
+end
 
 end
