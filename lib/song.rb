@@ -31,7 +31,7 @@ def self.genre_count
   result = {}
   genre_count = 0
   @@genres.each do |genre|
-    result[genre] ||= result.uniq.include?(genre)
+    result[genre] ||= result.uniq.count
 
 end
 
