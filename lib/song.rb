@@ -34,7 +34,7 @@ def self.genre_count
     result[genre] ||= result.uniq.count
 end
 result
-binding.pry
+#binding.pry
 end
 
 
