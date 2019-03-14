@@ -28,12 +28,8 @@ def self.genres
 end
 #
 def self.genre_count
-  result = {}
-  genre_count = 0
-  @@genres.each do |genre|
-    result[genre] ||= result.uniq.count
-end
-result
+
+result = @@genres.each_with_object(Hash.new(0)) { |word,counts| counts[word] += 1 }
 #binding.pry
 end
 
