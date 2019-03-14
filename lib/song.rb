@@ -35,7 +35,7 @@ def self.genre_count
 
 end
 
-binding.pry
+# binding.pry
 end
 
 
